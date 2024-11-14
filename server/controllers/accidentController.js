@@ -11,7 +11,7 @@ const openai = new OpenAI({
 const messages = [];
 const handleAccident = async (req, res) => {
   try {
-
+    const contactNumber = "108";
     const imagePath = req.file ? path.join(__dirname, '../', req.file.path) : null;
     const { firstQuestion, question } = req.body;
     console.log('firstQuestion,question', firstQuestion, question);
@@ -70,7 +70,7 @@ console.log('aiMessage',aiMessage);
 
     res.status(200).json({
       message: 'Accident analysis result',
-      response: aiMessage,
+      response: aiMessage,contactNumber,
     });
 
     if (imagePath) {
