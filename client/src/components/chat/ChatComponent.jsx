@@ -87,7 +87,7 @@ const ChatComponent = () => {
           type="text"
           value={userMessage}
           onChange={(e) => setUserMessage(e.target.value)}
-          className="border text-gray-900 text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400"
+          className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400"
           placeholder="Enter your message here"
         />
         <button onClick={sendMessage} className="text-white p-2">
