@@ -1,5 +1,13 @@
-import React, { useState } from 'react';
-import { FiPhone, FiUserCheck, FiAlertTriangle, FiShield } from 'react-icons/fi';
+import React, { useState } from "react";
+import {
+  FiPhone,
+  FiUserCheck,
+  FiAlertTriangle,
+  FiShield,
+  FiChevronDown,
+  FiXSquare,
+  FiXCircle,
+} from "react-icons/fi";
 
 const FloatingActionButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +27,7 @@ const FloatingActionButton = () => {
         className="flex items-center justify-center w-14 h-14 rounded-full bg-blue-600 text-white hover:bg-blue-700 shadow-lg transition-all duration-300 ease-in-out cursor-pointer"
         title="Contact"
       >
-        <FiPhone size={24} />
+        {isOpen ? <FiXCircle size={30} /> : <FiPhone size={24} />}
       </button>
       {isOpen && (
         <div className="space-y-2 transition-opacity duration-300 ease-in-out">
