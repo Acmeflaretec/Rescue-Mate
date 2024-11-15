@@ -4,8 +4,6 @@ import {
   FiUserCheck,
   FiAlertTriangle,
   FiShield,
-  FiChevronDown,
-  FiXSquare,
   FiXCircle,
 } from "react-icons/fi";
 
